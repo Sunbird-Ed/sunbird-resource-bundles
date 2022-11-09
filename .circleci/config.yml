@@ -14,8 +14,7 @@ jobs:
           name: Check node version
       - run:
           name: "Setup custom ENV variables"
-          command: |
-            echo 'export project_name="$(echo $project_name)"' >> $BASH_ENV
+          command: npm run build:publish
 
 workflows:
     version: 2
