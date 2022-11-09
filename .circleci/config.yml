@@ -1,0 +1,24 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.0.2
+
+jobs:
+  sunbird_build_json:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          command: node --version
+          name: Build app
+      - run:
+          name: "Setup custom ENV variables"
+          command: |
+            echo 'export project_name="$(echo $project_name)"' >> $BASH_ENV
+
+workflows:
+    version: 2
+    sunbird_resource_bundles:
+      jobs:
+        - sunbird_build_json
