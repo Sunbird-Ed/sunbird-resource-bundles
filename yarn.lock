@@ -1374,10 +1374,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==
 
-client-cloud-services@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/client-cloud-services/-/client-cloud-services-0.0.3.tgz#d18457fbcfa7831c59daebe5d335fab776ca97e2"
-  integrity sha512-pMtRENe8QC/c/PfIsrhsU9d2zxh71cMdkZjAviN+UAl5PLsv+4nvRJb71pPKbzXmVT/VePADA+qZMzcRYM1mPQ==
+client-cloud-services@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/client-cloud-services/-/client-cloud-services-0.0.4.tgz#c70ce95d6aacdb7eea0ed68105fbb753acf10cc0"
+  integrity sha512-iZAboLm75tkLJm/efmC2omTjP0zAkx2V96L6xI7/zc5gBdtqzktw3AlYQRC8h+htAyyG/tj3ewTNT8cMr5Fzig==
   dependencies:
     "@aws-sdk/client-s3" "3.163.0"
     "@aws-sdk/lib-storage" "3.182.0"
