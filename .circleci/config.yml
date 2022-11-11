@@ -13,8 +13,13 @@ jobs:
           command: node --version
           name: Check node version
       - run:
-          name: "Setup custom ENV variables"
-          command: npm run build:publish
+          name: Build and Upload
+          command: |
+            if [ -z $CIRCLE_PR_NUMBER ]; then
+              npm run build:publish
+            else
+              echo "Skipping Build and Upload"
+            fi
 
 workflows:
     version: 2
