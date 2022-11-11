@@ -13,9 +13,13 @@ jobs:
           command: node --version
           name: Check node version
       - run:
-          name: "Setup custom ENV variables"
+          name: Build and Upload
           command: |
-            echo 'export project_name="$(echo $project_name)"' >> $BASH_ENV
+            if [ -z $CIRCLE_PR_NUMBER ]; then
+              npm run build:publish
+            else
+              echo "Skipping Build and Upload"
+            fi
 
 workflows:
     version: 2
