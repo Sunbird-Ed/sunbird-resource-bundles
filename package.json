@@ -27,7 +27,7 @@
   "homepage": "https://github.com/Sunbird-Ed/sunbird-resource-bundles#readme",
   "dependencies": {
     "async": "^3.2.4",
-    "client-cloud-services": "^0.0.3",
+    "client-cloud-services": "0.0.4",
     "lodash": "4.17.15",
     "properties": "^1.2.1"
   }
